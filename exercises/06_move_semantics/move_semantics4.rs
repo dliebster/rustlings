@@ -7,8 +7,15 @@
 // Execute `rustlings hint move_semantics4` or use the `hint` watch subcommand
 // for a hint.
 
+<<<<<<< HEAD
 #[test]
 fn main() {
+=======
+
+#[test]
+fn main() {
+
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
     let mut vec1 = fill_vec();
 
     assert_eq!(vec1, vec![22, 44, 66, 88]);

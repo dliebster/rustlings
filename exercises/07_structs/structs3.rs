@@ -7,6 +7,10 @@
 // Execute `rustlings hint structs3` or use the `hint` watch subcommand for a
 // hint.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
 #[derive(Debug)]
 struct Package {
     sender_country: String,
@@ -30,6 +34,7 @@ impl Package {
     }
 
     fn is_international(&self) -> bool {
+<<<<<<< HEAD
         if self.recipient_country == self.sender_country {
             false
         } else {
@@ -38,6 +43,15 @@ impl Package {
     }
 
     fn get_fees(&self, cents_per_gram: u32) -> u32 {
+=======
+        if self.recipient_country != self.sender_country {
+            true
+        } else { false}
+    }
+
+    fn get_fees(&self, cents_per_gram: u32) -> u32 {
+        // Something goes here...
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
         self.weight_in_grams * cents_per_gram
     }
 }

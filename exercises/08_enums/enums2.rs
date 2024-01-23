@@ -3,13 +3,18 @@
 // Execute `rustlings hint enums2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 #[derive(Debug)]
 enum Message {
+<<<<<<< HEAD
     Move { x: u32, y: u32 },
     Echo(String),
     ChangeColor(u32, u32, u32),
+=======
+    Move { x: i32, y: i32},
+    Echo(String),
+    ChangeColor(i32, i32, i32),
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
     Quit,
 }
 
@@ -17,6 +22,7 @@ impl Message {
     fn call(&self) {
         println!("{:?}", self);
     }
+
 }
 
 fn main() {
