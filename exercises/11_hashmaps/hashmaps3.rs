@@ -19,6 +19,7 @@
 use std::collections::HashMap;
 
 // A structure to store the goal details of a team.
+#[derive(Debug)]
 struct Team {
     goals_scored: u8,
     goals_conceded: u8,
@@ -38,7 +39,41 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         // current line. Keep in mind that goals scored by team_1
         // will be the number of goals conceded by team_2, and similarly
         // goals scored by team_2 will be the number of goals conceded by
-        // team_1.
+        // team_1.              assert_eq!(team.goals_conceded, 4);
+        //(K, v) = (team_name, TEAM_struct)
+        let team_1 = Team {
+            goals_scored: team_1_score,
+            goals_conceded: team_2_score,
+        };
+        let team_2 = Team {
+            goals_scored: team_2_score,
+            goals_conceded: team_1_score,
+        };
+        scores
+            .entry(team_1_name)
+            .and_modify(|s| {
+            s.goals_scored += team_1_score;
+            s.goals_conceded += team_2_score;
+        })
+            .or_insert_with_key(|team_name| Team {
+                goals_scored: team_1_score,
+                goals_conceded: team_2_score,
+            });
+
+        scores
+            .entry(team_2_name)
+            .and_modify(|s| {
+                s.goals_scored += team_2_score;
+                s.goals_conceded += team_1_score;
+            })
+            .or_insert_with_key(|team_name| Team {
+                goals_scored: team_2_score,
+                goals_conceded: team_1_score,
+            });
+
+    }
+     for (key, value) in &scores {
+        println!("name, scored, conceded : {} {} {}", key,value.goals_scored, value.goals_conceded);
     }
     scores
 }
