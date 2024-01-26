@@ -6,7 +6,11 @@
 pub fn bigger(a: i32, b: i32) -> i32 {
     if a > b {
         a
+<<<<<<< HEAD
+        } else { b }
+=======
     } else {b}
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
 }
 
 // Don't mind this for now :)

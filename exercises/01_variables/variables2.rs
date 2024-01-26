@@ -5,7 +5,11 @@
 
 
 fn main() {
+<<<<<<< HEAD
+    let x = 10;
+=======
     let x :i32 = 5;
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
     if x == 10 {
         println!("x is ten!");
     } else {

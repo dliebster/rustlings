@@ -3,7 +3,10 @@
 // Execute `rustlings hint move_semantics1` or use the `hint` watch subcommand
 // for a hint.
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
 #[test]
 fn main() {
     let vec0 = vec![22, 44, 66];

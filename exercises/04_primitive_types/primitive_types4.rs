@@ -5,7 +5,10 @@
 // Execute `rustlings hint primitive_types4` or use the `hint` watch subcommand
 // for a hint.
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
 #[test]
 fn slice_out_of_array() {
     let a = [1, 2, 3, 4, 5];

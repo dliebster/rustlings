@@ -7,5 +7,8 @@
 fn main() {
     call_me();
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
 fn call_me() {}

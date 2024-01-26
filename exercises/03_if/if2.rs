@@ -5,13 +5,22 @@
 //
 // Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
 pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
     } else if fizzish == "fuzz" {
         "bar"
+<<<<<<< HEAD
+    } else {
+        "baz"
+    }
+=======
     } else {"baz"}
+>>>>>>> 736502b27024db5ae1b31645f56d91e0bee1b840
 }
 
 // No test changes needed!
